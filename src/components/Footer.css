@@ -1,0 +1,187 @@
+/* Footer Base Styles */
+.footer {
+  background-color: hsl(210, 24%, 16%); /* gray-900 */
+  color: white;
+}
+
+.footer-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+/* Organization Info Styles */
+.footer-org-info {
+  grid-column: span 1;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(217, 91%, 60%); /* primary color */
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-letter {
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.footer-org-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-org-fullname {
+  color: hsl(215, 20%, 65%); /* gray-300 */
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer-org-description {
+  color: hsl(215, 20%, 65%); /* gray-300 */
+  margin-bottom: 1rem;
+  max-width: 24rem;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-link {
+  color: hsl(215, 20%, 65%); /* gray-300 */
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-social-link:hover {
+  color: white;
+}
+
+.footer-social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Quick Links Styles */
+.footer-links-section {
+  grid-column: span 1;
+}
+
+.footer-section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link-item {
+  list-style: none;
+}
+
+.footer-link {
+  color: hsl(215, 20%, 65%); /* gray-300 */
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* Contact Info Styles */
+.footer-contact-section {
+  grid-column: span 1;
+}
+
+.footer-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: hsl(215, 20%, 65%); /* gray-400 */
+}
+
+.footer-contact-text {
+  color: hsl(215, 20%, 65%); /* gray-300 */
+}
+
+.footer-contact-link {
+  color: hsl(215, 20%, 65%); /* gray-300 */
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-contact-link:hover {
+  color: white;
+}
+
+/* Copyright Styles */
+.footer-copyright {
+  border-top: 1px solid hsl(210, 24%, 12%); /* gray-800 */
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-copyright-text {
+  color: hsl(215, 20%, 65%); /* gray-400 */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-org-info {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .footer-org-info {
+    grid-column: span 2;
+  }
+}
