@@ -8,7 +8,7 @@ import './About.css';
 const About = () => {
   const milestones = [
     {
-      year: '1990',
+      year: '1986',
       title: 'Foundation',
       description: 'PBKMS was established as an independent trade union to fight for agricultural workers\' rights in West Bengal.'
     },
@@ -23,9 +23,9 @@ const About = () => {
       description: 'Launched comprehensive programs for women\'s safety and equal rights at work sites.'
     },
     {
-      year: '2024',
-      title: 'Continued Struggle',
-      description: 'Ongoing campaigns for ₹600 minimum daily wage and better implementation of worker protection laws.'
+      year: '2025',
+      title: 'MGNREGA Restored in Bengal',
+      description: 'After a 3-year freeze, the Calcutta High Court ordered the revival of MGNREGA in West Bengal, declaring that workers shouldn’t suffer for the corruption of a few. A big win for rural rights.'
     }
   ];
 

@@ -8,6 +8,7 @@ import About from './pages/About';
 import OurWork from './pages/OurWork';
 import News from './pages/News';
 import GetInvolved from './pages/GetInvolved';
+import Campaigns from './pages/Campaigns';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/our-work" element={<OurWork />} />
             <Route path="/news" element={<News />} />
             <Route path="/get-involved" element={<GetInvolved />} />
+            <Route path='/campaigns' element={<Campaigns/>}/>
           </Routes>
         </main>
         <Footer />

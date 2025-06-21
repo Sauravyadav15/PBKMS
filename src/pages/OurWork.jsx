@@ -98,7 +98,7 @@ const OurWork = () => {
   return (
     <div className="our-work-container">
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section-work">
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">

@@ -1,16 +1,16 @@
 /* Base Styles */
 .our-work-container {
   min-height: 100vh;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  /* padding-top: 4rem;
+  padding-bottom: 4rem; */
 }
 
 /* Hero Section */
-.hero-section {
+.hero-section-work {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to right, rgb(198, 32, 32),rgb(222, 0, 0));
+  background: linear-gradient(to left, #EB5757 , #000000);
   color: white;
 }
 
@@ -48,6 +48,7 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  
 }
 
 /* Section Header */
@@ -235,6 +236,7 @@
   line-height: 2.25rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  color: black;
 }
 
 .impact-description {
@@ -262,18 +264,20 @@
   line-height: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: black;
 }
 
 .stat-label {
   font-size: 1.125rem;
   line-height: 1.75rem;
+  color: white;
 }
 
 /* CTA Section */
 .cta-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255) !important;
   color: rgb(22, 21, 21);
   text-align: center;
 }

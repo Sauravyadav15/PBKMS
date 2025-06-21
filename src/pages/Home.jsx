@@ -24,12 +24,12 @@ const Home = () => {
       subtitle: "For over 30 years, PBKMS has been the voice of agricultural workers in West Bengal.",
     },
     {
-      image: womenEmpowermentImage,
+      image:  farmWorkersImage,
       title: "Advocating for Fair Wages",
       subtitle: "We demand ₹600 minimum daily wage for all agricultural workers.",
     },
     {
-      image: farmWorkersImage,
+      image: womenEmpowermentImage,
       title: "Empowering Women Workers",
       subtitle: "60% of our members are women fighting for equal rights.",
     }

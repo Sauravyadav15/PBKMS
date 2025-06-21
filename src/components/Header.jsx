@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Users, Heart, FileText, Phone } from 'lucide-react';
+import { Menu, X, Users, Heart, FileText, Phone, Pickaxe, Earth } from 'lucide-react';
 import { Button } from './ui/button';
 import "./Header.css";
-import Logo from '/images/pbkmsLogo.svg';
+import HLogo from '/images/epbkms.png';
 
 
 const Header = () => {
@@ -12,9 +12,10 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/', icon: null },
     { name: 'About Us', href: '/about', icon: Users },
-    { name: 'Our Work', href: '/our-work', icon: Heart },
+    { name: 'Our Work', href: '/our-work', icon: Pickaxe },
     { name: 'News', href: '/news', icon: FileText },
     { name: 'Get Involved', href: '/get-involved', icon: Phone },
+    {name:'Campaigns', href:'/campaigns', icon:Earth}
   ];
 
   return (
@@ -23,12 +24,14 @@ const Header = () => {
         <div className="header-inner">
           {/* Logo and Organization Name */}
           <Link to="/" className="logo-link">
-            
-              <img 
-                src={Logo} 
+            <div className='logo-circle'>
+               <img 
+                src={HLogo} 
                 alt="PBKMS Logo" 
                 className="logo-image"
               />
+            </div>
+             
             
             <div className="logo-text">
               <h1 className="organization-name">PBKMS</h1>
@@ -48,14 +51,15 @@ const Header = () => {
                 <span>{item.name}</span>
               </Link>
             ))}
-          </nav>
-
-          {/* CTA Button */}
+              {/* CTA Button */}
           <div className="desktop-cta">
             <Button asChild className="cta-button">
               <Link to="/get-involved">Donate</Link>
             </Button>
           </div>
+          </nav>
+
+        
 
           {/* Mobile menu button */}
           <div className="mobile-menu-button">

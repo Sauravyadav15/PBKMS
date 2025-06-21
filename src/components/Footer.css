@@ -30,12 +30,13 @@
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
+  mix-blend-mode: lighten;
 }
 
 .footer-logo-circle {
   width: 3rem;
   height: 3rem;
-  background-color: hsl(217, 91%, 60%); /* primary color */
+  background-color: hsl(210, 33%, 99%); /* primary color */
   border-radius: 9999px;
   display: flex;
   align-items: center;

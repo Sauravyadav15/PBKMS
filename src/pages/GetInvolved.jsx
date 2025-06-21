@@ -103,7 +103,7 @@ const GetInvolved = () => {
   return (
     <div className="get-involved-container">
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section-involved">
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">

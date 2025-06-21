@@ -1,8 +1,7 @@
 /* Base Styles */
 .get-involved-container {
   min-height: 100vh;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+ 
 }
 
 /* Section Container */
@@ -45,11 +44,11 @@
 }
 
 /* Hero Section */
-.hero-section {
+.hero-section-involved {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to right, rgb(198, 32, 32), rgb(201, 0, 0));
+  background: linear-gradient(to right, #EB5757 , #000000);
   color: white;
 }
 

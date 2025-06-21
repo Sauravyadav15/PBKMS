@@ -4,8 +4,9 @@
 }
 
 .py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  /* padding-top: 4rem;
+  padding-bottom: 4rem; */
+  padding:0;
 }
 
 /* Hero Section */
@@ -13,7 +14,7 @@
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to right,  rgb(255, 140, 0),rgb(198, 32, 32));
+  background: linear-gradient(to left, #EB5757 , #000000 );
   color: white;
 }
 
@@ -358,7 +359,7 @@
 .about-message-section {
   background-color: hsl(210, 20%, 98%);
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  
 }
 
 .about-message-container {

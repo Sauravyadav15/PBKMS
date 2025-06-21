@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Twitter, Youtube, Mail, MapPin, Phone, Instagram } from 'lucide-react';
 import './Footer.css';
-import Logo from '/images/pbkmsLogo.svg';
+import Logo from '/images/newlogo.png';
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,11 +11,14 @@ const Footer = () => {
           {/* Organization Info */}
           <div className="footer-org-info">
             <div className="footer-logo-container">
-              <img 
+              <div className='footer-logo-circle'>
+                  <img 
                   src={Logo} 
                   alt="PBKMS Logo" 
                   className="logo-image"
                 />
+              </div>
+              
               <div className="footer-org-text">
                 <h3 className="footer-org-name">PBKMS</h3>
                 <p className="footer-org-fullname">Paschimbanga Khetmajoor Samity</p>
@@ -25,13 +28,16 @@ const Footer = () => {
               An independent trade union in West Bengal, India, promoting the rights of agricultural workers to decent wages, work, and food for over three decades.
             </p>
             <div className="footer-social-links">
-              <a href="#" className="footer-social-link">
+              <a href="https://www.facebook.com/PBKMSIndia/" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <Facebook className="footer-social-icon" />
               </a>
-              <a href="#" className="footer-social-link">
+              <a href="https://x.com/PBKMS_" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <Twitter className="footer-social-icon" />
               </a>
-              <a href="#" className="footer-social-link">
+              <a href="https://www.instagram.com/paschimbangakhetmajoorsamity._/" className="footer-social-link" target="_blank" rel="noopener noreferrer">
+                <Instagram className="footer-social-icon" />
+              </a>
+              <a href="https://www.youtube.com/@paschimbangakhetmajoorsami7480" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <Youtube className="footer-social-icon" />
               </a>
             </div>
@@ -74,13 +80,13 @@ const Footer = () => {
               </div>
               <div className="footer-contact-item">
                 <Mail className="footer-contact-icon" />
-                <a href="mailto:pbkmswb@gmail.com" className="footer-contact-link">
-                  pbkmswb@gmail.com
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Pbkmswb@gmail.com" className="footer-contact-link">
+                  Pbkmswb@gmail.com
                 </a>
               </div>
               <div className="footer-contact-item">
                 <Phone className="footer-contact-icon" />
-                <span className="footer-contact-text">+91 XXX XXX XXXX</span>
+                <span className="footer-contact-text">+91 94332 64109</span>
               </div>
             </div>
           </div>
@@ -88,7 +94,7 @@ const Footer = () => {
 
         <div className="footer-copyright">
           <p className="footer-copyright-text">
-            © 2024 Paschimbanga Khetmajoor Samity. All rights reserved. Fighting for workers' rights since 1990.
+            © 2025 Paschimbanga Khetmajoor Samity. All rights reserved. Fighting for workers' rights since 1986.
           </p>
         </div>
       </div>
