@@ -61,7 +61,7 @@ const Home = () => {
               </h1>
               <p className="hero-subtitle">{slide.subtitle}</p>
               <div className="hero-buttons">
-                <Button asChild size="lg" className="primary-button">
+                <Button asChild size="lg" className="primary-button-home">
                   <Link to="/about">
                     Learn Our Story <ArrowRight className="button-icon" />
                   </Link>
@@ -233,7 +233,7 @@ const Home = () => {
           <div className="work-button-container">
             <Button asChild size="lg" className="work-secondary-button">
               <Link to="/our-work">
-                Explore All Our Work <ArrowRight className="work-button-icon" />
+                Explore All Our Work <ArrowRight className="work-button-icon-home" />
               </Link>
             </Button>
           </div>

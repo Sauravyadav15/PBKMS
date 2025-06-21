@@ -20,6 +20,7 @@ function App() {
           <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/PBKMS" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-work" element={<OurWork />} />
             <Route path="/news" element={<News />} />

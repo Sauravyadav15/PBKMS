@@ -85,14 +85,14 @@
   justify-content: center;
 }
 
-.primary-button {
+.primary-button-home{
   background-color: #c62020;
   color: white;
 }
 
-.primary-button:hover {
-  background-color: #c62020;
-  color: black;
+.primary-button-home:hover {
+  background-color: #870606;
+  color: white;
 }
 
 .outline-button {
