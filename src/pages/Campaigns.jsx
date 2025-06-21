@@ -23,7 +23,7 @@ const Campaigns = () => {
           <div className="featured-campaign-grid">
             <div className="featured-campaign-content">
               <div className="campaign-badge">
-                <span className="badge-text">LANDMARK VICTORY</span>
+                <span className="badge-text">Landmark Victory</span>
               </div>
               <h2 className="featured-campaign-title">
                 MNREGA Restoration in Kolkata

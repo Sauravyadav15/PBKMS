@@ -77,7 +77,7 @@
   transition: color 0.2s ease-in-out;
 } */
 .nav-link {
-  position: relative; /* Needed for underline */
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -85,29 +85,42 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease-in-out;
-  padding: 0.5rem 0; /* Space for underline */
-  white-space: nowrap; /* Prevent text wrapping */
+  padding: 0.5rem 0;
+  white-space: nowrap;
 }
-.nav-link.active {
-  color: #c62020;
-}
-.nav-link.active::after {
+
+/* Underline base (hidden by default) */
+.nav-link::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
   height: 2px;
   background-color: #c62020;
+  width: 0;
+  transition: width 0.3s ease-in-out;
   border-radius: 2px;
-  width: auto; /* Responsive width */
-  transition: 0.3s;
+}
+
+/* On hover, show underline */
+.nav-link:hover::after {
+  width: 100%;
+  transition: 0.2s ease-in;
 }
 
 .nav-link:hover {
-  color: #c62020; /* primary color */
-  transition: 0.3s ease-in;
+  color: #c62020;
 }
+
+/* Active state */
+.nav-link.active {
+  color: #c62020;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
 
 .nav-icon {
   width: 1rem;
