@@ -285,8 +285,8 @@
   margin-bottom: 0.5rem;
 }
 
-.stat-label {
-  color: hsl(215, 20%, 65%);
+.stat-label-home {
+  color: #6d747e;
 }
 
 /* Mission Section */
@@ -392,7 +392,7 @@
 }
 
 .work-secondary-button {
-  background-color: hsl(160, 84%, 39%);
+  background-color: #c62020;
   color: white;
 }
 
@@ -400,14 +400,14 @@
   background-color: hsl(160, 84%, 20%);
 }
 
-.work-button-icon {
+.work-button-icon-home {
   margin-left: 0.5rem;
   width: 1.25rem;
   height: 1.25rem;
 }
 
 /* CTA Section */
-.cta-section {
+.cta-section-home{
   padding: 4rem 1rem;
   background-color: rgb(198, 32, 32) !important;
   color: white;

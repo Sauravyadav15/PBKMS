@@ -166,7 +166,7 @@ const Home = () => {
                   <stat.icon className="stat-icon" />
                 </div>
                 <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
+                <div className="stat-label-home">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -241,7 +241,7 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta-section">
+      <section className="cta-section-home">
         <div className="cta-container">
           <h2 className="cta-title">
             Join the Movement for Workers' Rights

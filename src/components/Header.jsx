@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Users, Heart, FileText, Phone, Pickaxe, Earth } from 'lucide-react';
 import { Button } from './ui/button';
 import "./Header.css";
@@ -42,14 +42,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             {navigation.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 to={item.href}
-                className="nav-link"
+                className={({ isActive }) => 
+                isActive ? "nav-link active" : "nav-link"
+              }
               >
                 {item.icon && <item.icon className="nav-icon" />}
                 <span>{item.name}</span>
-              </Link>
+              </NavLink>
             ))}
               {/* CTA Button */}
           <div className="desktop-cta">
@@ -58,8 +60,6 @@ const Header = () => {
             </Button>
           </div>
           </nav>
-
-        
 
           {/* Mobile menu button */}
           <div className="mobile-menu-button">

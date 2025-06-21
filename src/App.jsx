@@ -9,6 +9,7 @@ import OurWork from './pages/OurWork';
 import News from './pages/News';
 import GetInvolved from './pages/GetInvolved';
 import Campaigns from './pages/Campaigns';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="min-h-screen bg-background">
         <Header />
         <main>
+          <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
