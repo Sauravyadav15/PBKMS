@@ -92,7 +92,7 @@
 }
 
 .cta-button {
-  background-color: oklch(75% .15 60); /* primary color */
+  background-color: rgb(198, 32, 32); /* primary color */
   color: white;
 }
 
