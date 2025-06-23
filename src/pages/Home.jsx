@@ -63,7 +63,7 @@ const Home = () => {
               <div className="hero-buttons">
                 <Button asChild size="lg" className="primary-button-home">
                   <Link to="/about">
-                    Learn Our Story <ArrowRight className="button-icon" />
+                    Read our story <ArrowRight className="button-icon" />
                   </Link>
                 </Button>
                 <Button asChild size="lg" className="outline-button">

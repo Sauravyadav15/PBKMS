@@ -10,10 +10,10 @@ import News from './pages/News';
 import GetInvolved from './pages/GetInvolved';
 import Campaigns from './pages/Campaigns';
 import ScrollToTop from './components/ScrollToTop';
-
+import VideoNews from './pages/VideoNews';
 function App() {
   return (
-    <Router>
+    <Router >
       <div className="min-h-screen bg-background">
         <Header />
         <main>
@@ -25,7 +25,11 @@ function App() {
             <Route path="/our-work" element={<OurWork />} />
             <Route path="/news" element={<News />} />
             <Route path="/get-involved" element={<GetInvolved />} />
-            <Route path='/campaigns' element={<Campaigns/>}/>
+            
+            <Route path='/video' element={<VideoNews/>}/>
+
+            {/* Dropdown under our-work */}
+             <Route path='/campaigns' element={<Campaigns/>}/>
           </Routes>
         </main>
         <Footer />

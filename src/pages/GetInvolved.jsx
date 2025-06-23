@@ -72,17 +72,17 @@ const GetInvolved = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: 'West Bengal, India'
+      details: '1 Shib Tala Road, \n Maheswarpur, Badu, Madhyamram, Kolkata- 700128 India'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: 'pbkmswb@gmail.com'
+      details: 'Pbkmswb@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 XXX XXX XXXX'
+      details: '+91 94332 64109'
     }
   ];
 
