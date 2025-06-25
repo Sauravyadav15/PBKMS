@@ -72,7 +72,7 @@ const GetInvolved = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: '1 Shib Tala Road, \n Maheswarpur, Badu, Madhyamram, Kolkata- 700128 India'
+      details: '1 Shib Tala Road, Maheswarpur, Badu, Madhyamram, Kolkata- 700128 India'
     },
     {
       icon: Mail,

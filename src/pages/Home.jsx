@@ -155,7 +155,7 @@ const Home = () => {
               Our Impact in Numbers
             </h2>
             <p className="section-description">
-              Three decades of relentless struggle for workers' rights has created lasting change across West Bengal.
+              Four decades of relentless struggle for workers' rights has created lasting change across West Bengal.
             </p>
           </div>
           
@@ -241,7 +241,7 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta-section-home">
+      {/* <section className="cta-section-home">
         <div className="cta-container">
           <h2 className="cta-title">
             Join the Movement for Workers' Rights
@@ -259,7 +259,7 @@ const Home = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

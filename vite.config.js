@@ -9,7 +9,7 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173, // or whatever port you use
   },
-  
+  // base:'/PBKMS/',
   plugins: [react(),tailwindcss()],
   resolve: {
     alias: {

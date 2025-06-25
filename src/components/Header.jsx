@@ -47,34 +47,47 @@ const Header = () => {
             {navigation.map((item) => (
               <div className="nav-item-wrapper" key={item.name}>
                 {item.children ? (
-                <div
-                  className="dropdown-parent"
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                >
-                  <div className="nav-link dropdown-toggle">
-                    {item.icon && <item.icon className="nav-icon" />}
-                    <span>{item.name}</span>
-                    <ChevronDown className={`dropdown-icon ${isDropdownOpen ? 'rotate' : ''}`} size={16} />
-                  </div>
-
-                  {isDropdownOpen && (
-                    <div className="dropdown-menu">
-                      {item.children.map((child) => (
-                        <NavLink
-                          key={child.name}
-                          to={child.href}
-                          className="dropdown-link"
-                          onClick={() => setIsDropdownOpen(false)} // 👈 this is the real fix
-                        >
-                          {child.icon && <child.icon className="nav-icon" />}
-                          {child.name}
-                        </NavLink>
-                      ))}
+                  <div
+                    className="dropdown-parent"
+                    onMouseEnter={() => setIsDropdownOpen(true)}
+                    onMouseLeave={() => setIsDropdownOpen(false)}
+                  >
+                    <div className="nav-link-with-dropdown">
+                      {/* Clickable text part */}
+                      
+                      <NavLink
+                        to={item.href}
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active" : "nav-link"
+                        }
+                        onClick={() => setIsDropdownOpen(false)}
+                      >
+                        {item.icon && <item.icon className="nav-icon" />}
+                        <span>{item.name}</span>
+                      </NavLink>
+                      
+                      {/* Dropdown toggle part */}
+                      <div className="dropdown-toggle">
+                        <ChevronDown className={`dropdown-icon ${isDropdownOpen ? 'rotate' : ''}`} size={16} />
+                      </div>
                     </div>
-                  )}
-                </div>
 
+                    {isDropdownOpen && (
+                      <div className="dropdown-menu">
+                        {item.children.map((child) => (
+                          <NavLink
+                            key={child.name}
+                            to={child.href}
+                            className="dropdown-link"
+                            onClick={() => setIsDropdownOpen(false)}
+                          >
+                            {child.icon && <child.icon className="nav-icon" />}
+                            {child.name}
+                          </NavLink>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ) : (
                   <NavLink
                     to={item.href}
@@ -117,24 +130,36 @@ const Header = () => {
       {navigation.map((item) => (
         <div key={item.name}>
           {item.children ? (
-            <div>
-              {/* Dropdown toggle */}
-              <div
-                className="mobile-nav-link mobile-dropdown-toggle"
-                onClick={() =>
-                  setIsMobileDropdownOpen((prev) =>
-                    prev === item.name ? null : item.name
-                  )
-                }
-              >
-                {item.icon && <item.icon className="mobile-nav-icon" />}
-                {item.name}
-                <ChevronDown
-                  className={`dropdown-icon ${
-                    isMobileDropdownOpen === item.name ? 'rotate' : ''
-                  }`}
-                  size={16}
-                />
+            <div className="mobile-nav-split-item">
+              <div className="mobile-nav-split-wrapper">
+                {/* Left side - clickable text */}
+                <Link
+                  to={item.href}
+                  className="mobile-nav-split-text"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.icon && <item.icon className="mobile-nav-icon" />}
+                  {item.name}
+                </Link>
+                
+                {/* Right side - dropdown toggle */}
+                <button
+                  className="mobile-nav-split-toggle"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsMobileDropdownOpen(
+                      isMobileDropdownOpen === item.name ? null : item.name
+                    );
+                  }}
+                  aria-label="Toggle dropdown"
+                >
+                  <ChevronDown
+                    className={`mobile-dropdown-icon ${
+                      isMobileDropdownOpen === item.name ? 'rotate' : ''
+                    }`}
+                    size={16}
+                  />
+                </button>
               </div>
 
               {/* Dropdown content */}
