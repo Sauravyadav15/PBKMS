@@ -19,17 +19,17 @@ function App() {
         <main>
           <ScrollToTop/>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/PBKMS" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/our-work" element={<OurWork />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/get-involved" element={<GetInvolved />} />
+            <Route path="/1" element={<Home />} />
+            <Route path="/PBKMS1" element={<Home />} />
+            <Route path="/about1" element={<About />} />
+            <Route path="/our-work1" element={<OurWork />} />
+            <Route path="/news1" element={<News />} />
+            <Route path="/get-involved1" element={<GetInvolved />} />
             
-            <Route path='/video' element={<VideoNews/>}/>
+            <Route path='/video1' element={<VideoNews/>}/>
 
             {/* Dropdown under our-work */}
-             <Route path='/campaigns' element={<Campaigns/>}/>
+             <Route path='/campaigns1' element={<Campaigns/>}/>
           </Routes>
         </main>
         <Footer />
