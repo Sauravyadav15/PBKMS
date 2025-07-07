@@ -63,7 +63,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-inner">
           {/* Logo and Organization Name */}
-          <Link to="/" className="logo-link">
+          <Link to="/PBKMS" className="logo-link">
             <div className='logo-circle'>
               <img src={HLogo} alt="PBKMS Logo" className="logo-image" />
             </div>

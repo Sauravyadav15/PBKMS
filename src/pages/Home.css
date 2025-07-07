@@ -481,6 +481,17 @@
   .hero-subtitle {
     font-size: 1.5rem;
   }
+  .card-title {
+  font-size: 1rem;
+}
+
+.card-content {
+  font-size: 0.85rem;
+}
+
+.section-padding {
+  padding: 1rem;
+}
 }
 
 @media (min-width: 768px) {
@@ -497,6 +508,17 @@
   }
   
   .hero-title {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
+  .card-title {
+  font-size: 1rem;
+}
+
+.card-content {
+  font-size: 0.85rem;
+}
+
+.section-padding {
+  padding: 1rem;
+}
 }
