@@ -117,6 +117,39 @@
   display: none;
   gap: 2rem;
 }
+/* Prevent clicking on parent links */
+.nav-link.not-clickable {
+  cursor: default;
+  pointer-events: none;
+  color: hsl(215, 16%, 47%);
+  font-weight: 400;
+  padding: 0.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dropdown-parent:hover .nav-link.not-clickable {
+  color: #c62020;
+}
+
+.nav-link.not-clickable::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #c62020;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.dropdown-parent:hover .nav-link.not-clickable::after {
+  width: 100%;
+}
+
 
 .nav-link {
   position: relative;
