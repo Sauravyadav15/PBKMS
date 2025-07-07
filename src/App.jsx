@@ -6,11 +6,17 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import OurWork from './pages/OurWork';
-import News from './pages/News';
+import News from './pages/dropdownPages/News';
 import GetInvolved from './pages/GetInvolved';
-import Campaigns from './pages/Campaigns';
+import Campaigns from './pages/dropdownPages/Campaigns';
 import ScrollToTop from './components/ScrollToTop';
 import VideoNews from './pages/VideoNews';
+import Media from './pages/Media';
+import Gallery from './pages/dropdownPages/Gallery';
+import Blog from './pages/dropdownPages/Blog';
+import Internship from './pages/dropdownPages/Internship';
+import Partner from './pages/dropdownPages/Partner';
+
 function App() {
   return (
     <Router >
@@ -19,17 +25,23 @@ function App() {
         <main>
           <ScrollToTop/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            
             <Route path="/PBKMS" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-work" element={<OurWork />} />
-            <Route path="/news" element={<News />} />
+            <Route path="/our-work/campaigns" element={<Campaigns />} />
+            <Route path='/media' element={<Media />} />
+            <Route path="/media/news" element={<News />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             
             <Route path='/video' element={<VideoNews/>}/>
 
-            {/* Dropdown under our-work */}
-             <Route path='/campaigns' element={<Campaigns/>}/>
+            <Route path="/media/gallery" element={<Gallery />} />
+            <Route path="/media/blogs" element={<Blog />} />
+
+            <Route path="/get-involved/internship" element={<Internship />} />
+            <Route path="/get-involved/partner" element={<Partner />} />
+             
           </Routes>
         </main>
         <Footer />

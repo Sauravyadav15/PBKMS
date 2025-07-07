@@ -21,7 +21,7 @@ const Footer = () => {
               
               <div className="footer-org-text">
                 <h3 className="footer-org-name">PBKMS</h3>
-                <p className="footer-org-fullname">Paschimbanga Khetmajoor Samity</p>
+                <p className="footer-org-fullname">Paschimbanga Khet Majoor Samity</p>
               </div>
             </div>
             <p className="footer-org-description">
@@ -80,7 +80,7 @@ const Footer = () => {
               </div>
               <div className="footer-contact-item">
                 <Mail className="footer-contact-icon" />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Pbkmswb@gmail.com" className="footer-contact-link">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Pbkmswb@gmail.com" className="footer-contact-link" target="_blank">
                   Pbkmswb@gmail.com
                 </a>
               </div>

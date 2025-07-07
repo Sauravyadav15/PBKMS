@@ -182,7 +182,7 @@ const Home = () => {
               Our Mission
             </h2>
             <p className="mission-text">
-              Paschimbanga Khetmajoor Samity (PBKMS) is an independent trade union dedicated to promoting 
+              Paschimbanga Khet Majoor Samity (PBKMS) is an independent trade union dedicated to promoting 
               the rights of agricultural workers to decent wages, work, and food. We believe in the power 
               of collective action to create lasting change for rural communities across West Bengal.
             </p>

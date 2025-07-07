@@ -6,6 +6,57 @@
   top: 0;
   z-index: 50;
 }
+/* Header Top Bar Styles */
+.header-top {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #c62020;
+  z-index: 49;
+}
+
+.header-top-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Contact Styles */
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  color: hsl(215, 16%, 47%);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-contact-icon {
+  width: 1rem;
+  height: 1rem;
+  color: hsl(215, 16%, 47%);
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+   .header-top {
+    font-size: 0.85rem; /* Smaller font size (12px) for mobile */
+  }
+  .header-top-content {
+    justify-content: flex-end;
+    text-align: center;
+  }
+}
 
 .header-container {
   max-width: 80rem;
@@ -179,6 +230,20 @@
 
 .dropdown-parent:hover .dropdown-icon {
   transform: rotate(180deg);
+}
+.dropdown-link {
+  display: flex;
+  align-items: center; /* ✅ Align icon and text on same row */
+  gap: 0.5rem;          /* ✅ Spacing between icon and text */
+  padding: 0.4rem 0.75rem;
+  color: hsl(215, 16%, 47%);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out;
+}
+
+.dropdown-link:hover {
+  color: #c62020;
 }
 
 /* Desktop CTA */
@@ -374,7 +439,16 @@
 }
 
 /* Responsive Styles */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .header-top-content {
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1065px) {
+   
   .desktop-nav {
     display: flex;
   }
