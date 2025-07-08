@@ -13,15 +13,15 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/', icon: null },
-    { name: 'About Us', href: '/about', icon: Users },
+    { name: 'Home', href: '/PBKMS', icon: null },
+    { name: 'About Us', href: '/PBKMS/about', icon: Users },
     {
       name: 'What We Do',
-      href: '/our-work',
+      href: '/PBKMS/our-work',
       icon: Pickaxe,
       children: [
-        { name: 'Our Work', href: '/our-work', icon: PickaxeIcon },
-        { name: 'Campaigns', href: '/our-work/campaigns', icon: Earth },
+        { name: 'Our Work', href: '/PBKMS/our-work', icon: PickaxeIcon },
+        { name: 'Campaigns', href: '/PBKMS/our-work/campaigns', icon: Earth },
 
       ]
     },
@@ -30,15 +30,15 @@ const Header = () => {
       
       icon: Earth,
       children: [
-        { name: 'News', href: '/media/news', icon: FileText },
-        { name: 'Gallery', href: '/media/gallery', icon: GalleryThumbnails },
-        { name: 'Blog', href: '/media/blogs', icon: NotebookTabs },
+        { name: 'News', href: '/PBKMS/media/news', icon: FileText },
+        { name: 'Gallery', href: '/PBKMS/media/gallery', icon: GalleryThumbnails },
+        { name: 'Blog', href: '/PBKMS/media/blogs', icon: NotebookTabs },
       ]
     },
-    { name: 'Get Involved', href: '/get-involved', icon: Phone,
+    { name: 'Get Involved', href: '/PBKMS/get-involved', icon: Phone,
       children: [
-        { name: 'Internship', href: '/get-involved/internship', icon: LetterTextIcon },
-        { name: 'Partner', href: '/get-involved/partner', icon: Handshake },
+        { name: 'Internship', href: '/PBKMS/get-involved/internship', icon: LetterTextIcon },
+        { name: 'Partner', href: '/PBKMS/get-involved/partner', icon: Handshake },
         
       ]
      },
@@ -65,7 +65,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-inner">
           {/* Logo and Organization Name */}
-          <Link to="/" className="logo-link">
+          <Link to="/PBKMS" className="logo-link">
             <div className='logo-circle'>
               <img src={HLogo} alt="PBKMS Logo" className="logo-image" />
             </div>
@@ -117,6 +117,7 @@ const Header = () => {
 ) : (
   <NavLink
     to={item.href}
+    end={item.href === '/PBKMS'}
     className={({ isActive }) =>
       isActive ? "nav-link active" : "nav-link"
     }
@@ -228,11 +229,19 @@ const Header = () => {
         </div>
       ))}
 
-      <Button asChild className="mobile-cta-button">
-        <Link to="/get-involved" onClick={() => setIsMenuOpen(false)}>
-          Join Our Cause
-        </Link>
-      </Button>
+      {/* CTA Button */}
+            <button 
+        onClick={() => setIsOpen(true)}
+        className="cta-button" // Add your own styles
+      >
+        Donate
+      </button>
+
+      {/* Include the modal */}
+      <DonationModal 
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
     </nav>
   </div>
 )}

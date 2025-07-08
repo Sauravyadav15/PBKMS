@@ -35,8 +35,28 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 768px) {
+  .min-h-screen.py-16 {
+    font-size: 1rem;
+  }
+  
+  /* Optional: Slightly larger headings */
+  .min-h-screen.py-16 h1 {
+    font-size: 1.3rem;
+  }
+  .min-h-screen.py-16 h2 {
+    font-size: 1.2rem;
+  }
+  .min-h-screen.py-16 h3 {
+    font-size: 1.1rem;
+  }
+  .about-hero-content p {
+    font-size: 1rem;
+  }
 
-@media (min-width: 768px) {
+}
+
+@media (min-width: 769px) {
   .about-hero-title {
     font-size: 3.75rem;
   }
@@ -48,12 +68,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-@media (min-width: 768px) {
-  .about-hero-subtitle {
+.about-hero-subtitle {
     font-size: 1.5rem;
   }
-}
+
+
 
 /* Overview Section */
 .about-overview-section {

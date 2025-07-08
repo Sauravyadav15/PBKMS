@@ -278,7 +278,7 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: rgb(255, 255, 255) !important;
-  color: rgb(22, 21, 21);
+  color: rgb(6, 5, 5) !important;
   text-align: center;
 }
 
@@ -338,13 +338,32 @@
 }
 
 /* Media Queries */
-@media (min-width: 640px) {
-  .cta-buttons {
-    flex-direction: row;
+@media (max-width: 768px) {
+  .our-work-container {
+    font-size: 1rem;
+  }
+  .our-work-container h2 {
+    font-size: 1.2rem;
+  }
+  .our-work-container h3 {
+    font-size: 1.1rem;
+  }
+  .impact-description {
+    font-size: 1rem;
+   
+  }
+  .impact-stats * {
+    font-size: 1.2rem;
+  }
+  .hero-text h1{
+    font-size: 1.4rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-title {
     font-size: 3.75rem;
     line-height: 1;

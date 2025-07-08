@@ -27,22 +27,22 @@ function App() {
           <ScrollToTop/>
           <Routes>
             
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/our-work" element={<OurWork />} />
-            <Route path="/our-work/campaigns" element={<Campaigns />} />
-            <Route path='/media' element={<Media />} />
-            <Route path="/media/news" element={<News />} />
-            <Route path="/get-involved" element={<GetInvolved />} />
+            <Route path="/PBKMS" element={<Home />} />
+            <Route path="/PBKMS/about" element={<About />} />
+            <Route path="/PBKMS/our-work" element={<OurWork />} />
+            <Route path="/PBKMS/our-work/campaigns" element={<Campaigns />} />
+            <Route path='/PBKMS/media' element={<Media />} />
+            <Route path="/PBKMS/media/news" element={<News />} />
+            <Route path="/PBKMS/get-involved" element={<GetInvolved />} />
             
-            <Route path='/video' element={<VideoNews/>}/>
+            <Route path='/PBKMS/video' element={<VideoNews/>}/>
 
-            <Route path="/media/gallery" element={<Gallery />} />
-            <Route path="/media/blogs" element={<Blog />} />
+            <Route path="/PBKMS/media/gallery" element={<Gallery />} />
+            <Route path="/PBKMS/media/blogs" element={<Blog />} />
 
-            <Route path="/get-involved/internship" element={<Internship />} />
-            <Route path="/get-involved/partner" element={<Partner />} />
-            <Route path="/donation" element={<DonationModal />} />
+            <Route path="/PBKMS/get-involved/internship" element={<Internship />} />
+            <Route path="/PBKMS/get-involved/partner" element={<Partner />} />
+            <Route path="/PBKMS/donation" element={<DonationModal />} />
           </Routes>
         </main>
         <Footer />

@@ -50,10 +50,27 @@
   padding: 2rem;
   margin-bottom: 4rem;
 }
+@media (max-width: 768px) {
+  .campaigns-content h1 {
+    font-size: 1.3rem;
+  }
+   .campaigns-content h2 {
+    font-size: 1.2rem;
+  }
+   .campaigns-content h3 {
+    font-size: 1.1rem;
+  }
+   .campaigns-content {
+    font-size: 1rem;
+  }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .featured-campaign {
     padding: 3rem;
+  }
+  .featured-campaign-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -64,11 +81,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .featured-campaign-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 .campaign-badge {
   background-color: #f1c7c7;

@@ -221,7 +221,7 @@ const OurWork = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta-section">
+      {/* <section className="cta-section">
         <div className="section-container">
           <h2 className="cta-title">
             Support Our Work
@@ -239,7 +239,7 @@ const OurWork = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

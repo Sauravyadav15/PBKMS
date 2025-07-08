@@ -71,11 +71,20 @@
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3.75rem;
-    line-height: 1;
+@media (max-width: 768px) {
+  .get-involved-container h1 {
+    font-size: 1.3rem;
   }
+   .get-involved-container h2 {
+    font-size: 1.2rem;
+  }
+   .get-involved-container h3 {
+    font-size: 1.1rem;
+  }
+   .get-involved-container {
+    font-size: 1rem;
+  }
+  
 }
 
 .hero-description {
@@ -90,6 +99,10 @@
   .hero-description {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .hero-title {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
