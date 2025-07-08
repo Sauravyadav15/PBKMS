@@ -16,6 +16,7 @@ import Gallery from './pages/dropdownPages/Gallery';
 import Blog from './pages/dropdownPages/Blog';
 import Internship from './pages/dropdownPages/Internship';
 import Partner from './pages/dropdownPages/Partner';
+import DonationModal from './pages/dropdownPages/DonationModal';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <ScrollToTop/>
           <Routes>
             
-            <Route path="/PBKMS" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-work" element={<OurWork />} />
             <Route path="/our-work/campaigns" element={<Campaigns />} />
@@ -41,7 +42,7 @@ function App() {
 
             <Route path="/get-involved/internship" element={<Internship />} />
             <Route path="/get-involved/partner" element={<Partner />} />
-             
+            <Route path="/donation" element={<DonationModal />} />
           </Routes>
         </main>
         <Footer />

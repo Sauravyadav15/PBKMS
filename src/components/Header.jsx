@@ -4,14 +4,16 @@ import { Menu, X, Users, FileText, Phone, Pickaxe, Earth, Video, ChevronDown, Ga
 import { Button } from './ui/button';
 import "./Header.css";
 import HLogo from '/images/epbkms.png';
+import DonationModal from '../pages/dropdownPages/DonationModal'; // Adjust the import path as necessary
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null); // Desktop dropdown state
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(null); // Mobile dropdown state
+  const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/PBKMS', icon: null },
+    { name: 'Home', href: '/', icon: null },
     { name: 'About Us', href: '/about', icon: Users },
     {
       name: 'What We Do',
@@ -63,7 +65,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-inner">
           {/* Logo and Organization Name */}
-          <Link to="/PBKMS" className="logo-link">
+          <Link to="/" className="logo-link">
             <div className='logo-circle'>
               <img src={HLogo} alt="PBKMS Logo" className="logo-image" />
             </div>
@@ -128,11 +130,18 @@ const Header = () => {
             ))}
 
             {/* CTA Button */}
-            <div className="desktop-cta">
-              <Button asChild className="cta-button">
-                <Link to="/get-involved">Donate</Link>
-              </Button>
-            </div>
+            <button 
+        onClick={() => setIsOpen(true)}
+        className="cta-button" // Add your own styles
+      >
+        Donate
+      </button>
+
+      {/* Include the modal */}
+      <DonationModal 
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
           </nav>
 
           {/* Mobile Menu Toggle */}
