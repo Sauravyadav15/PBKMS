@@ -58,8 +58,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer-link-item">
-                <Link to="/PBKMS/news" className="footer-link">
-                  News & Updates
+                <Link to="/PBKMS/media/news" className="footer-link">
+                  News
                 </Link>
               </li>
               <li className="footer-link-item">
