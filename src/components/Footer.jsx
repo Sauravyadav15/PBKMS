@@ -48,22 +48,22 @@ const Footer = () => {
             <h4 className="footer-section-title">Quick Links</h4>
             <ul className="footer-links-list">
               <li className="footer-link-item">
-                <Link to="/about" className="footer-link">
+                <Link to="/PBKMS/about" className="footer-link">
                   About Us
                 </Link>
               </li>
               <li className="footer-link-item">
-                <Link to="/our-work" className="footer-link">
+                <Link to="/PBKMS/our-work" className="footer-link">
                   Our Work
                 </Link>
               </li>
               <li className="footer-link-item">
-                <Link to="/news" className="footer-link">
+                <Link to="/PBKMS/news" className="footer-link">
                   News & Updates
                 </Link>
               </li>
               <li className="footer-link-item">
-                <Link to="/get-involved" className="footer-link">
+                <Link to="/PBKMS/get-involved" className="footer-link">
                   Get Involved
                 </Link>
               </li>
